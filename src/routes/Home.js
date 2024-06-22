@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Characters from "../components/Characters";
 import styles from "./Home.module.css";
+import Loading from "../components/Loading";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -19,13 +20,13 @@ function Home() {
     getMovies();
   }, []);
   return (
-    <body>
+    <div className={styles.bodyDiv}>
       <div>
-        <h1>MARBEL UNIVERSE Characters</h1>
+        <div className={styles.span}>MARBEL UNIVERSE Characters</div>
       </div>
       <div>
         {loading ? (
-          <h1>Loading...</h1>
+          <div className={styles.loadingDiv}>Loading...</div>
         ) : (
           <div className={styles.container}>
             {characters.map((items) => (
@@ -34,7 +35,7 @@ function Home() {
           </div>
         )}
       </div>
-    </body>
+    </div>
   );
 }
 export default Home;

@@ -40,14 +40,6 @@
   font-size: 2em;
 }
 
-span {
-  font-family: "Allura", cursive;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 2em;
-  text-align: center;
-}
-
 .linkStyle {
   color: inherit; /* 부모 요소의 색상 상속 */
   cursor: pointer; /* 마우스 커서를 포인터로 변경 */
