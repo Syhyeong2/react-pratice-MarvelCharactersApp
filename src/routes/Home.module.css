@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("/Users/isihyeong/Desktop/Programming/react-movieapp-nomadcoder/src/stars-1845140_1280.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 74px;
+}

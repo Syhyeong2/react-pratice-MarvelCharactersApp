@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+.charactersContainer {
+  border: 0.3px solid #676767;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.charactersContainer:hover {
+  scale: 110%;
+  transition: all;
+  transition-duration: 200ms;
+}
+
+.imageContainer {
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.textContainer {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  font-family: "Allura", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2em;
+}
+
+span {
+  font-family: "Allura", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2em;
+  text-align: center;
+}
+
+.linkStyle {
+  color: inherit; /* 부모 요소의 색상 상속 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+  text-decoration: none; /* 밑줄 제거 */
+}
