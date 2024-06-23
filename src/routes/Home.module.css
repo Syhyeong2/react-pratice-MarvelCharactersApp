@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 .bodyDiv {
-  background-image: url("/Users/isihyeong/Desktop/Programming/react-movieapp-nomadcoder/src/star-1626550_640.jpg");
+  background-image: url("/src/star-1626550_640.jpg");
 
   display: flex;
   flex-direction: column;

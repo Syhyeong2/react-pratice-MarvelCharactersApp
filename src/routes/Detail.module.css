@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
 .bodyDiv {
-  background-image: url("/Users/isihyeong/Desktop/Programming/react-movieapp-nomadcoder/src/star-1626550_640.jpg");
+  background-image: url("/src/star-1626550_640.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;

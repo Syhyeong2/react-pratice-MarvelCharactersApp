@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./Characters.module.css";
-import image from "/Users/isihyeong/Desktop/Programming/react-movieapp-nomadcoder/src/5330d073715757aa325a188fddac41f4.jpg";
+import image from "./5330d073715757aa325a188fddac41f4.jpg";
 
 function Characters({ characters }) {
   const imageNotAvailbleURL =
