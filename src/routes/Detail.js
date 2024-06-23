@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import styles from "./Detail.module.css";
+
 function Detail() {
   const [loading, setLoading] = useState(true);
 
@@ -17,7 +19,29 @@ function Detail() {
   useEffect(() => {
     getCharacter();
   }, [getCharacter]);
-  console.log(character);
-  return <div>{loading ? null : <span>{character.name}</span>}</div>;
+
+  return (
+    <div className={styles.bodyDiv}>
+      {loading ? (
+        <h1>Loading...</h1>
+      ) : (
+        <div className={styles.container}>
+          <div className={styles.imgContainer}>
+            <img
+              src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
+              alt={character.id}
+            ></img>
+          </div>
+          <div>
+            <h1>{character.name}</h1>
+            <h2>Appearances</h2>
+            {character.series.items.map((items) => (
+              <h3>{items.name}</h3>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
 export default Detail;

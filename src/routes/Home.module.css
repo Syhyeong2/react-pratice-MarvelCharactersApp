@@ -4,13 +4,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
-  padding: 200px;
+  row-gap: 50px;
+  column-gap: 25px;
+  padding: 150px;
   width: 100%;
   box-sizing: border-box;
 }
 .bodyDiv {
-  background-image: url("/Users/isihyeong/Desktop/Programming/react-movieapp-nomadcoder/src/stars-1845140_1280.jpg");
+  background-image: url("/Users/isihyeong/Desktop/Programming/react-movieapp-nomadcoder/src/star-1626550_640.jpg");
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +23,7 @@
 
 .span {
   text-transform: uppercase;
-  color: #d3d3d3;
+  color: white;
   font-size: 4.5em;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
